@@ -6,7 +6,7 @@ print("Chương trình sẽ bắt đầu sau 3 giây. Hãy chuyển ngay về tr
 time.sleep(3)
 
 print("Đang thực hiện nhấn phím Tab 19 lần...")
-# Nhấn phím 'tab' 20 lần, mỗi lần cách nhau 0.1 giây để trang web không bị nuốt phím
+# Nhấn phím 'tab' 19 lần, mỗi lần cách nhau 0.1 giây để trang web không bị nuốt phím
 pyautogui.press('tab', presses=19, interval=0.1)
 
 # Chờ một chút xíu rồi nhấn Enter để xác nhận vào ô đang chọn
@@ -40,7 +40,7 @@ pyautogui.press('/')
 
 danh_sach_tu_khoa = [
     
-    "Mai VF3", "hoc bong dai hoc 179", "Tu hoc ngoai ngu", "Bi quyet song khoe",
+    "Mai VF3", "hoc bong dai hoc 179", "Tu hoc ngoai ngu", "Bi quyet song khoe", "Quan nha haha"
     "Tieng anh cua nguoi viet", "Nhu mot nguoi rung", "Kinh te hoc vi mo", "Nhethuat song toi gian", "Dau tu tai chinh ca nhân",
     "Cham soc thu cung", "Kham pha dai duong", "Kien truc hien dai", "Cong thuc lam banh",
     "Nhiep anh co ban", "Yoga tai nha", "Tam ly hoc hanh vi", "Quan ly thoi gian hieu qua",
@@ -53,7 +53,7 @@ print("⚠️ Hãy mở sẵn trình duyệt, vào trang Bing và CLICK VÀO Ô 
 time.sleep(3)
 
 for index, tu_khoa in enumerate(danh_sach_tu_khoa, 1):
-    print(f"[{index}/40] Đang gõ từ khóa: {tu_khoa}")
+    print(f"[{index}/30] Đang gõ từ khóa: {tu_khoa}")
     
     # 1. Nhấn phím '/' để focus vào ô tìm kiếm (từ thứ 2 trở đi)
     if index > 1:
